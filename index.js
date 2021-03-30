@@ -22,9 +22,9 @@ var upload = multer({
 }).single("file"); //Field name and max count
 
 const dropbox = dropboxV2Api.authenticate({
-  client_id: "r14g5bsq6iseoap",
-  client_secret: "vvpbycdtxnpcr3l",
-  redirect_uri: "http://localhost:5000/oauth",
+  client_id: "<< API_KEY >>",
+  client_secret: "<< API_SECRET >>",
+  redirect_uri: "<< REDIRECT_URL >>",
 });
 
 app.get("/", (req, res) => {
